@@ -1,11 +1,14 @@
 {
+  "homepage": "http://Siva-Karthik123.github.io/sdp-paams-server",
   "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch index.js"
+    "dev": "node --watch index.js",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +21,8 @@
     "jwt-decode": "^4.0.0",
     "mongodb": "^6.3.0",
     "nodemon": "^3.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
