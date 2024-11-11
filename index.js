@@ -19,7 +19,7 @@ const jwtmw=exjwt({
     algorithms:[algorithm],
 })
 
-const client=new MongoClient('mongodb+srv://admin:admin@karthik.llfrpnw.mongodb.net/?retryWrites=true&w=majority')
+const client=new MongoClient('mongodb://mongo:xOOarCIsCiesnScGjxNPghmBafPvMITZ@autorack.proxy.rlwy.net:29511')
 client.connect()
 const db=client.db('s31')
 const col=db.collection('register')
